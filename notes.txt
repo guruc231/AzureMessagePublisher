@@ -1,0 +1,8 @@
+1) cretae service bus client object as singleton and register that instance with DI
+2) inject singleton servicebusclient instance into messgepublisher class
+3) handle servicebusexception and serialization exception thrown by client.sendMessageAsync
+if service bus exception is thrown then handle accordingly based on the value of the property :ServiceBusFailureReason
+4) handle duplicate message (unique message Id)?
+5) does azure raise an exception on dubplicate message
+6) how to handle non-existant topic name in publisher
+7)
